@@ -14,7 +14,7 @@ public class CommentGenerator {
     private static final List<String> COMMENT_AUTHOR =
             Arrays.asList(
                     "ACCP", "APCP", "BPCP", "CMCP", "IRCP",
-                    "SDCP", "SCCP", "XCCP", "YCCP", "ZCCP");
+                    "SDCP", "SCCP", "RVCP", "TBMS", "TPHK");
 
 
     private static final List<String> COMMENT_MESSAGE =

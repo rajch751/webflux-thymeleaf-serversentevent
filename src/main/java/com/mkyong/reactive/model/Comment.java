@@ -4,12 +4,16 @@ public class Comment {
 
     private String author;
     private String message;
+    private String closed;
+    private String total;
     private String timestamp;
 
-    public Comment(String author, String message, String timestamp) {
+    public Comment(String author,String message, String closed,String total,String timestamp) {
         this.author = author;
         this.message = message;
         this.timestamp = timestamp;
+        this.closed=closed;
+        this.total=String.valueOf((Integer.parseInt(message)+Integer.parseInt(closed)));
     }
 
     public String getAuthor() {
@@ -36,12 +40,28 @@ public class Comment {
         this.timestamp = timestamp;
     }
 
-    @Override
-    public String toString() {
-        return "Comment{" +
-                "author='" + author + '\'' +
-                ", message='" + message + '\'' +
-                ", timestamp='" + timestamp + '\'' +
-                '}';
-    }
+	public String getClosed() {
+		return closed;
+	}
+
+	public void setClosed(String closed) {
+		this.closed = closed;
+	}
+
+	public String getTotal() {
+		return total;
+	}
+
+	public void setTotal(String total) {
+		this.total = total;
+	}
+
+	@Override
+	public String toString() {
+		return "Comment [author=" + author + ", message=" + message + ", closed=" + closed + ", total=" + total
+				+ ", timestamp=" + timestamp + "]";
+	}
+
+   
+   
 }

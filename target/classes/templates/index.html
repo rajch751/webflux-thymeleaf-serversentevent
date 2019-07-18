@@ -13,21 +13,25 @@
 
     <div class="row">
         <div id="title">
-            <h1>Spring WebFlux + Server Sent Events</h1>
+            <h1>Defect Summary Dashboard</h1>
         </div>
 
         <table id="comments" class="table table-striped">
             <thead>
             <tr>
-                <th width="10%">Author</th>
-                <th width="60%">Message</th>
-                <th width="30%">Date</th>
+                <th width="30%">Project Name</th>
+                <th width="15%">Open Defects</th>
+                <th width="15%">Closed Defects</th>
+                <th width="15%">Total Defects</th>
+                <th width="25%">Last Updated Date</th>
             </tr>
             </thead>
             <tbody>
             <tr class="result" data-th-each="comment : ${comments}">
                 <td>[[${comment.author}]]</td>
                 <td>[[${comment.message}]]</td>
+                <td>[[${comment.closed}]]</td>
+                <td>[[${comment.total}]]</td>
                 <td>[[${comment.timestamp}]]</td>
             </tr>
             </tbody>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: webflux-thymeleaf-sse
+Implementation-Version: 1.0
+Built-By: RajeshCRRVNR
+Implementation-Vendor-Id: com.mkyong.spring.reactive
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/webflux-thymeleaf-sse
+Created-By: Maven Integration for Eclipse
+

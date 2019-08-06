@@ -17,9 +17,9 @@ function loadComments () {
              {
              	
         		 var firstCellText  = commentTable.rows[i].cells[0].innerText;
-        		 
+        		 //commentTable.rows[i].style='background-color:#F1522B;color:white;text;font-weight:bold;';
         		 if(firstCellText == comment.author) {
-        			 commentTable.rows[i].style='background-color:gray;color:white;text;font-weight:bold;';
+        			 commentTable.rows[i].style='background-color:#FB6F5C;color:white;text;font-weight:bold;';
         			 commentTable.rows[i].cells[1].innerHTML=comment.message;
         			 commentTable.rows[i].cells[2].innerHTML=comment.closed;
         			 commentTable.rows[i].cells[3].innerHTML=comment.total;

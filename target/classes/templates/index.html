@@ -11,14 +11,14 @@
 
 <div class="container">
 
-    <div class="row">
+    <div class="row" style="background-color: #8DBEFB;">
         <div id="title">
-            <h1>Defect Summary Dashboard</h1>
+            <h1 style="color:#C31709;font-weight:bold;">Defect Summary Dashboard</h1>
         </div>
 
-        <table id="comments" class="table table-striped">
+        <table id="comments" class="table table-striped"  >
             <thead>
-            <tr>
+            <tr style="background-color:#1264C3;color:white">
                 <th width="30%">Project Name</th>
                 <th width="15%">Open Defects</th>
                 <th width="15%">Closed Defects</th>
@@ -27,7 +27,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr class="result" data-th-each="comment : ${comments}">
+            <tr class="x" data-th-each="comment : ${comments}" >
                 <td>[[${comment.author}]]</td>
                 <td>[[${comment.message}]]</td>
                 <td>[[${comment.closed}]]</td>
